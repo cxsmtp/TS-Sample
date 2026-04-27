@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insecure Shop Portal</title>
+    <!-- VULN-FE-01: Uses outdated library with known risks (placeholder example). -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <h1>Insecure TypeScript Ecommerce Portal</h1>
+
+    <section>
+      <h2>Search Products</h2>
+      <input id="search" placeholder="search" />
+      <button id="searchBtn">Search</button>
+      <ul id="results"></ul>
+    </section>
+
+    <section>
+      <h2>Login</h2>
+      <input id="email" value="admin@shop.local" />
+      <input id="password" value="Admin123!" />
+      <button id="loginBtn">Login</button>
+      <pre id="session"></pre>
+    </section>
+
+    <section>
+      <h2>Write Review</h2>
+      <input id="reviewUser" placeholder="name" />
+      <textarea id="reviewText"></textarea>
+      <button id="reviewBtn">Submit</button>
+    </section>
+
+    <div id="promo"></div>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
